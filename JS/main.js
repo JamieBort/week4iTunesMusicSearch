@@ -1,3 +1,21 @@
+// The following is from Kelly's assignment.
+//
+// 1. Select and store elements
+// 2. create submit event for getting the users search term
+// 3. create fetch request that is called after a submission
+// 4. create way to append the fetch results to your page
+// 5. create a way to listen for a click that will play the song in the audio play.
+
+// SELECT AND STORE ELEMENTS FROM HTML PAGE ================
+
+
+// CREATE EVENT LISTENER FOR SEARCH BUTTON ===========
+
+
+// Setup FETCH TO ACCESS API ==============
+
+
+
 // Get the element, add a click listener...
 document.getElementById("parent-list").addEventListener("click", function(e) {
 	// e.target is the clicked element!
@@ -12,7 +30,7 @@ document.getElementById("parent-list").addEventListener("click", function(e) {
 // =================================
 // The following is from the Git Hub Data V Card assignment
 //
-// 
+//
 // let container = document.querySelector('#apiInfo');
 //
 // let request = new XMLHttpRequest();

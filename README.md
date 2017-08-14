@@ -1,6 +1,6 @@
 the assignment: https://newline.theironyard.com/cohorts/15/courses/9/projects/74
 
-** iTunes Music Search **
+**iTunes Music Search**
 
 As your final project for this portion of the course, let's take stock of all you have learned and build a real application that is useful and you can share with friends. For this app, we will be using iTunes API to pull data from.
 
@@ -29,8 +29,24 @@ There will be some new concepts you'll need to work through on this project, so 
  * Hint: You'll need to dynamically change the src value
 The biggest gotchya will likely be getting the song to play. Since your JavaScript has already run, if you added an click event listener to your page, but you add the content after the fact it won't register. You need to get creative here, but putting your click around the entire results section, and then making sure to get the correct item clicked on. Here is a great [article on Event Delegation](https://davidwalsh.name/event-delegate)
 
-** Mockup & Starter Files **
+**Mockup & Starter Files**
 
 Note, the below wireframe is just an idea of the structure. You can follow it perfectly or do something completely different. As long as the requirements above are there, then you win.
 
 * [Music App Wireframe](https://tiy-learn-content.s3.amazonaws.com/c888498b-musicapp.jpg)
+
+**Bonus: Deployment**
+
+Ok, so you've built a really cool web application. Congrats! Now you'd like a way to share it with your friends. There are many deployment strategies you can take and your instructor might have others they want to share, but let's talk through a really simple one that you can do without adding any other tools.
+
+Many of you might not know this, but GitHub has a deployment tool built in that's free to use. It's called GitHub Pages, and it's pretty easy to use. Here is how:
+
+1. Ensure your index.html file is in the root of your project
+2. Create a branch called gh-pages
+   * git branch gh-pages
+3. Push the branch
+   * git push origin gh-pages
+4. That's it!
+You can now view your live site at http://<username>.github.io/<repository> (just replace username and repository).
+
+One thing to note though, is if you later change your master branch, you need to merge the update into your gh-pages branch or it won't show up. It also can take up to an hour to update on their servers. Because of this, I would suggest not doing this step until you are done with your project and ready to deploy it.

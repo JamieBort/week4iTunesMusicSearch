@@ -1,3 +1,46 @@
+let player = document.getElementById(player);
+let search = document.getElementById(search);
+let results = document.getElementById(results);
+
+// Use addEventListener to clear search.
+
+// let clear = document.getElementById(clear); // not necessary
+clear.addEventListener('click', function() {
+  results.innerHTML = ' ';
+})
+
+// Use addEventListener to search
+
+search.addEventListener('click', function() {
+  something
+})
+
+
+// Use fetch request to display list of songs from a search
+
+fetch()
+
+fetch(`https://itunes.apple.com/search?term==${input.value}`).then(
+    function(response) {
+      if (response.status === 200) {
+        return response.json();
+      }
+    })
+  .then(function(data) {
+    console.log(data);
+    results.innerHTML = ' ';
+
+    // Loop through API data to retrieve search input
+  });
+
+
+
+
+
+
+
+
+
 // The following is from Kelly's assignment.
 //
 // 1. Select and store elements
@@ -18,12 +61,12 @@
 
 // Get the element, add a click listener...
 document.getElementById("parent-list").addEventListener("click", function(e) {
-	// e.target is the clicked element!
-	// If it was a list item
-	if(e.target && e.target.nodeName == "LI") {
-		// List item found!  Output the ID!
-		console.log("List item ", e.target.id.replace("post-", ""), " was clicked!");
-	}
+  // e.target is the clicked element!
+  // If it was a list item
+  if (e.target && e.target.nodeName == "LI") {
+    // List item found!  Output the ID!
+    console.log("List item ", e.target.id.replace("post-", ""), " was clicked!");
+  }
 });
 
 

@@ -1,3 +1,4 @@
+document.addEventListener('load', yourFunction, false);
 let player = document.getElementById("player");
 let search = document.getElementById("search");
 let result = document.getElementById("result");

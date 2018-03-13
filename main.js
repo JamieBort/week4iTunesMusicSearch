@@ -7,3 +7,5 @@
 // 3. Create your `fetch` request that is called after a submission
 // 4. Create a way to append the fetch results to your page
 // 5. Create a way to listen for a click that will play the song in the audio play
+
+// Take what is entered in the search field and foward it to the api once the search button is selected

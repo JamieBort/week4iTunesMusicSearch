@@ -6,6 +6,8 @@ As your final project for this portion of the course, let's take stock of all yo
 
 You'll use this data to pull songs based on a search that your user performs. Here is an idea of what the [end result](https://tiy-learn-content.s3.amazonaws.com/c888498b-musicapp.jpg) should look like, though you can have fun with the design.
 
+<a href="https://tiy-learn-content.s3.amazonaws.com/c888498b-musicapp.jpg" target="_blank">end result</a>
+
 Here are the steps you'll need to take in order to complete this project.
 
 1. Build a simple form that has an <input> where a user can fill in their favorite band, like "Backstreet Boys", and it will return a handful of songs by them or with their name in it.

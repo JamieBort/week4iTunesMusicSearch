@@ -9,3 +9,7 @@
 // 5. Create a way to listen for a click that will play the song in the audio play
 
 // Take what is entered in the search field and foward it to the api once the search button is selected
+
+document.getElementById('searchButton').addEventListener('click', function(){
+  alert("whoops!");
+});

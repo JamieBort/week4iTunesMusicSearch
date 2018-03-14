@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>iTunes Music Search</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container">
     <header>
       <h1>Really Awesome Music Site</h1>
     </header>
     <section class="player">
-      <audio class="music-player" controls="controls" src=""></audio>
+      <audio class="music-player" controls="controls" src=""></audio> <!-- Hint: You'll need to dynamically change the src value -->
     </section>
     <section class="search">
       <form class="search-form">
         <input placeholder="Search" type="text">
-        <button>Search Button</button>
-        <button>Clear Button</button>
+        <button id="searchButton">Search Button</button>
+        <button id="clearButton">Clear Button</button>
       </form>
+    </section>
+    <section>
+      <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg"> 
+        Your browser does not support the audio element.
+      </audio>
     </section>
     <section class="results"></section>
   </div>
   <script src="main.js"></script>
 </body>
+
 </html>

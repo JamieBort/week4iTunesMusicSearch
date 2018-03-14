@@ -12,7 +12,8 @@
       <h1>Really Awesome Music Site</h1>
     </header>
     <section class="player">
-      <audio class="music-player" controls="controls" src=""></audio> <!-- Hint: You'll need to dynamically change the src value -->
+      <audio class="music-player" controls="controls" src=""></audio>
+      <!-- Hint: You'll need to dynamically change the src value -->
     </section>
     <section class="search">
       <form class="search-form">
@@ -21,13 +22,23 @@
         <button id="clearButton">Clear Button</button>
       </form>
     </section>
+
     <section>
-      <audio controls>
-        <source src="horse.ogg" type="audio/ogg">
-        <source src="horse.mp3" type="audio/mpeg"> 
-        Your browser does not support the audio element.
-      </audio>
+      <!-- I inserted this section. -->
+      <div>
+        <ul>
+          <li id="one"></li>
+          <li id="two"></li>
+        </ul>
+      </div>
+      <div>
+        <audio controls>
+          <source src="horse.ogg" type="audio/ogg">
+          <source src="horse.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+      </div>
     </section>
+
     <section class="results"></section>
   </div>
   <script src="main.js"></script>

@@ -9,17 +9,15 @@
 // 5. Create a way to listen for a click that will play the song in the audio play
 
 // Take what is entered in the search field and foward it to the api once the search button is selected
+var body = document.querySelector("body");
+// var div = document.createElement("div")
+// body.appendChild(div);
 
-document.getElementById('searchButton').addEventListener('click', function(){
+document.getElementById('searchButton').addEventListener('click', function () {
   alert("whoops!");
 });
 
-
-
-// Working query:      https://itunes.apple.com/search?media=movie&term=comedy
-
-// and    https://itunes.apple.com/search?term=jack+johnson
-
+// TODO: modify URL so that it is populated by the search field.
 fetch('https://itunes.apple.com/search?term=jack+johnson')
   // Data is fetched and we get a promise.
   .then(
@@ -31,21 +29,41 @@ fetch('https://itunes.apple.com/search?term=jack+johnson')
         return;
       }
       response.json().then(function (data) {
+        // TODO: iterate over the json object so that each element is caputred here.
+        
+        for (let i = 0; i < data.results.length; i++) {
 
-        document.getElementById('one').innerHTML = `artistId: ` + data.results[0].artistId;
-        document.getElementById('two').innerHTML = `kind: ` + data.results[0].kind;
-        // document.getElementById('email').innerHTML = `Email: ` + data.email;
-        // document.getElementById('company').innerHTML = `Company: ` + data.company;
-        // document.getElementById('blog').innerHTML = `Website: ` + data.blog;
-        // document.getElementById('bio').innerHTML = data.bio;
+          var div = document.createElement("div");
+          body.appendChild(div);
+          div.innerHTML =
+            `<li><img id="image" src=${data.results[i].artworkUrl100}></li>`
+
+          var ul = document.createElement("ul");
+          var li1 = document.createElement("li");
+          var li2 = document.createElement("li");
+
+          div.appendChild(ul);
+          ul.appendChild(li1);
+          ul.appendChild(li2);
+
+          li1.innerHTML = data.results[i].artistId;
+          li2.innerHTML = data.results[i].kind;
+        }
+        // document.getElementById('one').innerHTML = `artistId: ` + data.results[i].artistId;
+        // document.getElementById('two').innerHTML = `kind: ` + data.results[i].kind;
         // var pic = document.getElementById('pic')
-        // pic.setAttribute("src", data.avatar_url);
+        // pic.setAttribute("src", data.results[i].artworkUrl30);
+        // var pic2 = document.getElementById('pic2')
+        // pic2.setAttribute("src", data.results[i].artworkUrl60);
+        // var pic3 = document.getElementById('pic3')
+        // pic3.setAttribute("src", data.results[i].artworkUrl100);
 
-        console.log(data.results[0])
-        console.log(data.results[0].artistId);
-        console.log(data.results[0].kind);
+        // console.log(data.results.length);
+        // console.log(data.results[i])
+        // console.log(data.results[i].collectionName);
+        // console.log(data.results[i].collectionId);
         // console.log("Here is the data:", data);
-        console.log(data.results[0].wrapperType);
+        // console.log(data.results[i].trackName);
       });
     }
   )

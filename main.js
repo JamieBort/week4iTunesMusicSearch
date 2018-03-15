@@ -13,12 +13,17 @@ var body = document.querySelector("body");
 // var div = document.createElement("div")
 // body.appendChild(div);
 
+// document.getElementById("results").innerHTML = "hello";
+
 document.getElementById('searchButton').addEventListener('click', function () {
-  alert("whoops!");
+  // section.innerHTML = "The event listener is working."
 });
 
 // TODO: modify URL so that it is populated by the search field.
 fetch('https://itunes.apple.com/search?term=jack+johnson')
+// fetch('https://itunes.apple.com/search?term=${mySearch.value}')
+
+
   // Data is fetched and we get a promise.
   .then(
     // The promise returns a response from the server.
@@ -33,10 +38,15 @@ fetch('https://itunes.apple.com/search?term=jack+johnson')
         
         for (let i = 0; i < data.results.length; i++) {
 
+          var resultsSection = document.getElementById("results")
           var div = document.createElement("div");
-          body.appendChild(div);
+          resultsSection.appendChild(div);
           div.innerHTML =
             `<li><img id="image" src=${data.results[i].artworkUrl100}></li>`
+
+            // for (let i = 0; i < data.results.length; i++) {
+
+            // }
 
           var ul = document.createElement("ul");
           var li1 = document.createElement("li");
@@ -48,6 +58,8 @@ fetch('https://itunes.apple.com/search?term=jack+johnson')
 
           li1.innerHTML = data.results[i].artistId;
           li2.innerHTML = data.results[i].kind;
+
+          console.log(data.results[i].kind);
         }
         // document.getElementById('one').innerHTML = `artistId: ` + data.results[i].artistId;
         // document.getElementById('two').innerHTML = `kind: ` + data.results[i].kind;
@@ -58,8 +70,8 @@ fetch('https://itunes.apple.com/search?term=jack+johnson')
         // var pic3 = document.getElementById('pic3')
         // pic3.setAttribute("src", data.results[i].artworkUrl100);
 
-        // console.log(data.results.length);
-        // console.log(data.results[i])
+        console.log(data.results.length);
+        console.log(data.results);
         // console.log(data.results[i].collectionName);
         // console.log(data.results[i].collectionId);
         // console.log("Here is the data:", data);
@@ -70,3 +82,10 @@ fetch('https://itunes.apple.com/search?term=jack+johnson')
   .catch(function (err) {
     console.log("Fetch Error :-S", err);
   });
+// });
+
+// ======Clears search to begin a new search when "Search Again" button is clicked==========
+
+clear.addEventListener('click', function() {
+  tracks.innerHTML = ' ';
+})

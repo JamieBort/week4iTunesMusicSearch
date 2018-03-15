@@ -8,42 +8,28 @@
 
 <body>
   <div class="container">
+    <!-- =================Main Title================ -->
     <header>
       <h1>Really Awesome Music Site</h1>
     </header>
+
+    <!-- =============Audio Player Controller========= -->
     <section class="player">
       <audio class="music-player" controls="controls" src=""></audio>
       <!-- Hint: You'll need to dynamically change the src value -->
     </section>
+
+    <!-- ===========Music Search Form========== -->
     <section class="search">
       <form class="search-form">
-        <input placeholder="Search" type="text">
-        <button id="searchButton">Search Button</button>
-        <button id="clearButton">Clear Button</button>
+        <input id="mySearch" placeholder="Search" type="search">
+        <button id="searchButton" type="button">Search Button</button>
+        <button id="clearButton" type="button">Clear Button</button>
       </form>
     </section>
 
-    <!-- I inserted this section. -->
-    <section>
-      <!-- <div>
-        <ul id="list" class="list">
-          <li id="one"></li>
-          <li id="two"></li>
-          <img id="pic" src="" alt="">
-          <img id="pic2" src="" alt="">
-          <img id="pic3" src="" alt="">
-        </ul>
-      </div> -->
-      <!-- <div> -->
-        <audio controls>
-          <source src="horse.ogg" type="audio/ogg">
-          <source src="horse.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-        </audio>
-      <!-- </div> -->
-    </section>
-    <!-- I inserted this section. -->
+    <section id="results"></section>
 
-    <section class="results"></section>
   </div>
   <script src="main.js"></script>
 </body>

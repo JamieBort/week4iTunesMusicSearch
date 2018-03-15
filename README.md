@@ -1,5 +1,10 @@
 the assignment: https://newline.theironyard.com/cohorts/15/courses/9/projects/74
 
+TODO:
+1. Make it so that when you select the 'Clear Button' it reseats the Search Field.
+2. Make it so that when a track is selected the name of the song, the composer, and the name of the album is displayed.
+3. Make it so that a list of search terms is displayed under 'history'.
+
 **iTunes Music Search**
 
 As your final project for this portion of the course, let's take stock of all you have learned and build a real application that is useful and you can share with friends. For this app, we will be using iTunes API to pull data from.

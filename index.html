@@ -2,36 +2,39 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
   <title>iTunes Music Search</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="container">
-    <!-- =================Main Title================ -->
+  <div class="wrapper">
+
+<!-- =================Main Title================ -->
     <header>
-      <h1>Really Awesome Music Site</h1>
+      <h1>Looking for Music? Search Here!</h1>
     </header>
 
-    <!-- =============Audio Player Controller========= -->
-    <section class="player">
-      <audio class="music-player" controls="controls" src=""></audio>
-      <!-- Hint: You'll need to dynamically change the src value -->
-    </section>
-
-    <!-- ===========Music Search Form========== -->
-    <section class="search">
-      <form class="search-form">
-        <input id="mySearch" placeholder="Search" type="search">
-        <button id="searchButton" type="button">Search Button</button>
-        <button id="clearButton" type="button">Clear Button</button>
+<!-- =============Audio Player Controller========= -->
+    <div class="Audio">
+      <audio id="audioplayer" controls="controls" src=""></audio>
+    </div>
+<!-- ===========Music Search Form========== -->
+    <div class="search">
+      <form class="searchform">
+        <h2>Search For Your Fave Music!</h2>
+        <input type="searchField" id="input" value="">
+        <button type="searchButton" id="submit" name="button">Search Button</button>
+        <button type="button" id="clearButton" name="button">Clear Button</button>
       </form>
-    </section>
+    </div>
 
-    <section id="results"></section>
+    <div id="results">
 
-  </div>
-  <script src="main.js"></script>
+    </div>
+
+  <!-- ====JS link========= -->
+<script src="main.js"></script>
 </body>
 
 </html>

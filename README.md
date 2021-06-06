@@ -1,3 +1,11 @@
+# Week4iTunesMusicSearch
+
+Can't find original instructions. (there is the source files though)
+
+However this is good: https://github.com/jtcanfield/itunes-music-search
+
+Rename this repo.
+
 the assignment: https://newline.theironyard.com/cohorts/15/courses/9/projects/74
 
 TODO:

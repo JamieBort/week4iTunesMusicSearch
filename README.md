@@ -6,6 +6,8 @@ However this is good: https://github.com/jtcanfield/itunes-music-search
 
 Rename this repo.
 
+Fix this up for the portfolio website: https://github.com/JamieBort/jamiebort.github.io/
+
 Also, address the "potential security vulnerabilities in your dependencies."
 
 the assignment: https://newline.theironyard.com/cohorts/15/courses/9/projects/74
